@@ -1,0 +1,89 @@
+---
+title: Home
+layout: default
+---
+
+<div class="main">
+    <blockquote>
+        "Proof of Trotsky's farsightedness is that none of his predictions have come true yet."
+        <em>- Isaac Deutscher, at a party in his honor at Oxford in 1964, as quoted in The Leveling Wind (1994) by George Will, p. 132</em>
+    </blockquote>
+    <blockquote>
+        "When a prophet speaks in the LORD's name, and the message does not come true or is not fulfilled, that is a message the LORD has not spoken. The prophet has spoken it presumptuously. Do not be afraid of him."
+        <em>- Deuteronomy 18:22, Holman Christian Standard Bible</em>
+    </blockquote>
+    
+    <p>Welcome to <em>PCG Watch</em>. We believe the PCG's doctrines are not on as sure a foundation as they claim. We want to document inaccuracies in the doctrines, prophecies or commands of Herbert W. Armstrong and his self-proclaimed successor, Gerald Flurry.</p>
+    <p>We hope you engage in the articles and send us any critiques, either of the PCG or of our own articles!</p>
+
+    <hr>
+    <div style="text-align: left; list-style-position: inside;">
+        <div class="column-half">    
+            <h3 style="text-align: left;">Latest</h3>
+                <ul>
+                    {% for post in site.posts limit:10 %}
+                    <li class="smalltext"><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+
+            <h3 style="text-align: left;">Gerald Flurry</h3>
+                <ul>
+                    {% for category in site.categories limit:5 %}
+                        {% if category[0] == "grf" %}
+                            {% for post in category[1] %}
+                                <li class="smalltext"><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        {% endif %}        
+                    {% endfor %}
+                </ul>
+            <!-- </div> -->
+        
+            <h3 style="text-align: left;">Herbert W. Armstrong</h3>
+                <ul>
+                    {% for category in site.categories limit:5 %}
+                        {% if category[0] == "hwa" %}
+                            {% for post in category[1] %}
+                                <li class="smalltext"><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        {% endif %}        
+                    {% endfor %}
+                </ul>
+        </div>
+        <div class="column-half">
+            <h3 style="text-align: left;">Prophecies</h3>
+                <ul>
+                    {% for category in site.categories limit:5 %}
+                        {% if category[0] == "prophecy" %}
+                            {% for post in category[1] %}
+                                <li class="smalltext"><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        {% endif %}        
+                    {% endfor %}
+                </ul>
+        <!-- </div> -->
+        
+        <!-- <div class="column-half"> -->
+            <h3 style="text-align: left;">The Bible</h3>
+                <ul>
+                    {% for category in site.categories limit:5 %}
+                        {% if category[0] == "bible" %}
+                            {% for post in category[1] %}
+                                <li class="smalltext"><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        {% endif %}        
+                    {% endfor %}
+                </ul>
+
+            <h3 style="text-align: left;">Rebuttals</h3>
+                <ul>
+                    {% for category in site.categories limit:5 %}
+                        {% if category[0] == "rebuttal" %}
+                            {% for post in category[1] %}
+                                <li class="smalltext"><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        {% endif %}        
+                    {% endfor %}
+                </ul>
+        </div>
+    </div>    
+</div>

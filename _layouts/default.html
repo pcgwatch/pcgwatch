@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | PCG Watch </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/draft.css">
+      <link rel="shortcut icon" type="image/png" href="/assets/images/logo_transparent_cropped.png">
+    {% feed_meta %}
+    {% seo %}
+  </head>
+  <body>
+    <div class="sidebar">
+        <img src="/assets/images/logo_transparent_cropped.png" alt="PCGWatch Logo" height="221px" width="210px">
+      {% include navigation.html %}
+    </div>
+    
+    {{ content }}
+    
+    <br>
+    <br>
+  </body>
+</html>

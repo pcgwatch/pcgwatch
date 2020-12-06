@@ -1,0 +1,20 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Blog
+  link: /blog.html
+- name: Gerald Flurry
+  link: /geraldflurry.html
+- name: Herbert W. Armstrong
+  link: /hwa.html
+- name: Prophecies
+  link: /prophecies.html
+- name: The Bible
+  link: /bible.html
+- name: Member Submissions
+  link: /submissions.html
+- name: Rebuttals and Responses
+  link: /responses.html
+- name: Archives
+  link: /archives.html
