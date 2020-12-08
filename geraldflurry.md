@@ -12,7 +12,7 @@ This page collects all our articles on Gerald Flurry and his teachings. We exami
 <hr>
 
 <ul>
-    {% for category in site.categories limit:5 %}
+    {% for category in site.categories %}
         {% if category[0] == "grf" %}
             {% for post in category[1] %}
                 <li style="text-align: left;" class="smalltext"><a href="{{ post.url }}">{{ post.title }}</a></li>
