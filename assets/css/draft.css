@@ -371,6 +371,11 @@ table td + td {
     border-left: 1px solid #fff;
 }
 
+/* COMPACT TABLE */
+
+.compact td {
+    padding: 1px 10px;
+}
 
 /*=-------------=*/
 /*= T.O.CONTENTS=*/
@@ -387,6 +392,7 @@ table td + td {
     padding-left: 1em;
     /* margin-left: 1em; */
 }
+
 
 /*=-------------------=*/
 /*=     NAVBAR        =*/
