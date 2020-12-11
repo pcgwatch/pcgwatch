@@ -63,7 +63,7 @@ Grey (blockquote border):  #CCCCCC
 }
 
 .main {
-    width: 50%;
+    width: 45%;
     float: left;
 }
 
@@ -105,7 +105,7 @@ small {
     float: right;
     clear: right;
     margin-right: -50%;
-    width: 50%;
+    width: 40%;
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1.0rem;
@@ -428,9 +428,9 @@ table td + td {
     .main {
         width: 65%;
     }
-    /* small {
+    small {
         display: none;
-    } */
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -440,6 +440,9 @@ table td + td {
     .main {
         width: 65%;
         float: left;
+    }
+    small {
+        display: inline;
     }
 }
 
@@ -452,9 +455,13 @@ table td + td {
     }
 
     .main {
-        width: 50%;
+        width: 45%;
     }
     .sidebar {
-        width: 25%;
+        width: 27.5%;
     }
+
+    /* small {
+        display: inline;
+    } */
 }
