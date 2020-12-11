@@ -416,6 +416,9 @@ table td + td {
     .column-half {
         width: 100%;
     }
+    small {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -425,6 +428,9 @@ table td + td {
     .main {
         width: 65%;
     }
+    /* small {
+        display: none;
+    } */
 }
 
 @media only screen and (min-width: 992px) {
