@@ -426,7 +426,14 @@ table td + td {
     .column-half {
         width: 100%;
     }
+    .logo {
+        height: 74px;
+        width: 70px;
+    }
     small {
+        display: none;
+    }
+    nav {
         display: none;
     }
 }
@@ -437,6 +444,9 @@ table td + td {
     }
     .main {
         width: 65%;
+    }
+    .nav-mobile {
+        display: none;
     }
     small {
         display: none;
